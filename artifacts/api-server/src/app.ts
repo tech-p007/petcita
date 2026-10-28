@@ -45,6 +45,11 @@ app.use(
   })),
 );
 
+// Ruta raíz agregada para que el backend responda con éxito
+app.get('/', (req, res) => {
+  res.json({ message: "PetCita API is running successfully! 🐾" });
+});
+
 app.use("/api", router);
 
 export default app;
