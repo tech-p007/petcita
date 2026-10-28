@@ -61,6 +61,7 @@ import NotFound from '@/pages/not-found';
 const queryClient = new QueryClient();
 const today = new Date().toISOString().slice(0, 10);
 const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+const API_URL = import.meta.env.VITE_API_URL || "https://petcita.onrender.com";
 const clerkPubKey = publishableKeyFromHost(
   window.location.hostname,
   import.meta.env.VITE_CLERK_PUBLISHABLE_KEY,
