@@ -3,7 +3,7 @@ services:
     name: petcita-frontend
     env: static
     buildCommand: pnpm install --no-frozen-lockfile && pnpm --filter @workspace/petcita build
-    staticPublishPath: artifacts/petcita/dist
+    staticPublishPath: artifacts/petcita/dist/public
     envVars:
       - key: VITE_CLERK_PUBLISHABLE_KEY
         sync: false
