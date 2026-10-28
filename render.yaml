@@ -9,3 +9,5 @@ services:
         sync: false
       - key: VITE_API_URL
         value: https://petcita.onrender.com
+      - key: BASE_PATH
+        value: /
